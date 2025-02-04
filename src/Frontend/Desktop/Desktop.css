@@ -1,0 +1,88 @@
+.desktop{
+    background: linear-gradient(#2E3192 0%, #1BFFFF 100%);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+.desktop-left{
+    width: 20%;
+    color: white;
+}
+.desktop-left h1{
+    font-family: Spectral, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+.contents{
+    font-family: Rubik, serif;
+    font-size: 1.3rem;
+    margin: 0 10px;
+}
+.contents img{
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.contents div{
+    margin: 20px 0;
+    padding: 8px;
+    border-radius: 20px;
+}
+.contents div:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.desktop-right{
+    background-color: white;
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.desktop-right h1{
+    margin: 0;
+    text-align: center;
+    font-family: Spectral, sans-serif;
+    font-size: 3rem;
+}
+.desktop-right h3{
+    margin: 0;
+    text-align: center;
+    font-family: Rubik, serif;
+    font-size: 1.2rem;
+    color: rgb(30, 30, 30);
+}
+.desktop-options{
+    /* border: 2px dashed red; */
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.desktop-converse, .desktop-diary{
+    width: 50%;
+    text-align: center;
+    font-family: Rubik, serif;
+    font-size: 2rem;
+}
+.desktop-converse img{
+    width: 55%;
+    transition: all 0.6s ease;
+}
+.desktop-converse img:hover{
+    border-radius: 15px;
+    width: 58%;
+    box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+    cursor: pointer;
+}
+.desktop-diary img{
+    width: 60%;
+    transition: all 0.6s ease;
+}
+.desktop-diary img:hover{
+    border-radius: 15px;
+    width: 63%;
+    box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+    cursor: pointer;
+}

@@ -1,0 +1,65 @@
+.discover, .get-in-touch{
+    width: 80%;
+    margin: 200px auto;
+    text-align: center;
+}
+.discover h1, .get-in-touch h1{
+    font-family: Spectral, sans-serif;
+    font-size: 3rem;
+    color: #102660;
+}
+.discover p, .get-in-touch p{
+    font-family: Rubik, serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.discover-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.discover-content h2{
+    font-family: Spectral, sans-serif;
+    font-size: 2.1rem;
+    color: crimson;
+}
+.discover-content div{
+    width: 35%;
+}
+
+
+
+.feedback-form{
+    width: 80%;
+    margin: 0 auto;
+    font-family: Rubik, serif;
+    font-size: 1.2rem;
+    text-align: left;
+    color: crimson;
+    padding: 20px;
+}
+textarea {
+    resize: vertical;
+}
+input[type="text"], input[type="email"], textarea, select {
+    padding: 10px;
+    margin: 15px 0;
+    width: 98%;
+    border-radius: 5px;
+    font-family: Rubik, serif;
+    font-size: 1.2rem;
+    border: 1px solid black;
+}
+input[type="submit"]{
+    font-family: Rubik, serif;
+    font-size: 1.2rem;
+    background-color: #DBD9DA;
+    border: none;
+    border-radius: 20px;
+    display: block;
+    padding: 10px 15px;
+    margin: 0 auto;
+    transition: all 0.6s ease;
+}
+input[type="submit"]:hover{
+    background-color: #19D019;
+}
