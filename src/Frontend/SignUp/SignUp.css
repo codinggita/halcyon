@@ -1,20 +1,28 @@
 .sign-up{
-    margin: 0;
-    height: 100vh;
-    display: flex;
- }
- .sign-up-right{
+     margin: 0;
+     height: 100vh;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     overflow: hidden;
+     position: relative;
+}
+.sign-up-right{
      width: 50%;
- }
- .sign-up-right img{
+     height: 100%;
+     transition: transform 1s ease-in-out;
+}
+.sign-up-right img{
      width: 100%;
      height: 100%;
- }
+     object-fit: cover;
+}
 .sign-up-left{
      font-family: Rubik, serif;
      font-size: 1.2rem;
      width: 50%;
      padding: 20px;
+     flex: 1;
 }
 .sign-up-left h1{
      font-family: Spectral, sans-serif;
@@ -31,7 +39,6 @@
      color: crimson;
 }
  #name, #email, #password{
-     /* background-color: #82ACAB; */
      width: 96%;
      padding: 10px;
      margin: 15px 0;
@@ -59,7 +66,14 @@
      color: crimson;
      font-weight: 800;
      transition: all 0.6s ease;
+     cursor: pointer;
 }
 .sign-up-option span:hover{
      color: navy;
+}
+
+
+
+.move-left {
+     transform: translateX(-100%);
 }

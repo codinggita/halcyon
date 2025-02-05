@@ -37,7 +37,7 @@
     color: black;
     border-radius: 20px;
     padding: 10px 15px;
-    transition: all 0.6s ease; /* Adding smooth transition effect */
+    transition: all 0.6s ease;
 }
 .sign_in_btn:hover{
     background-color: aqua;
@@ -61,6 +61,7 @@
     border-radius: 20px;
     margin: 50px auto;
     padding: 25px;
+    animation: fadeIn 2.5s ease;
 }
 .heading-content h1{
     font-family: Spectral, sans-serif;
@@ -88,15 +89,13 @@
     display: flex;
 }
 .s11, .s22{
-    /* border: 2px solid red; */
     width: 50%;
     border-radius: 20px;
     margin: 50px;
     padding: 20px;
 }
 .s22 img{
-    width: 65%;
-    /* height: 100%; */
+    width: 65%
 }
 .s11 h2{
     font-family: Spectral, sans-serif;
@@ -211,4 +210,16 @@
     width: fit-content;
     margin: 20px auto 0 auto;
     padding: 8px;
+}
+
+
+
+.s11, .s22, .info {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2.5s ease, transform 2.5s ease;
+}
+.s11.visible, .s22.visible, .info.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

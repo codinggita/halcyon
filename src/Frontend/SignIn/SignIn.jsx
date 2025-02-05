@@ -1,14 +1,35 @@
-import pink from '../../assets/image02.jpeg'
-import './SignIn.css'
-import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import pink from "../../assets/image02.jpeg";
+import "./SignIn.css";
 
 function SignIn() {
     const navigate = useNavigate();
+    const [position, setPosition] = useState(0);
+
+    const moveDiv = () => {
+        const screenWidth = window.innerWidth - 730; // Account for div width
+        let newPosition = 0;
+        const speed = 8;
+
+        const interval = setInterval(() => {
+            if (newPosition >= screenWidth) {
+                clearInterval(interval);
+                navigate("/sign_up"); // Navigate when div reaches the end
+            } else {
+                newPosition += speed;
+                setPosition(newPosition);
+            }
+        }, 10);
+    };
 
     return (
         <>
             <div className="sign-in">
-                <div className="sign-in-left">
+                <div
+                    className="sign-in-left"
+                    style={{ transform: `translateX(${position}px)`, transition: "transform 0.1s linear" }}
+                >
                     <img src={pink} alt="green background" />
                 </div>
 
@@ -25,7 +46,7 @@ function SignIn() {
                             <br /><br />
 
                             <label htmlFor="password">Password:</label> <br />
-                            <input type="password" name="password" id="password" req />
+                            <input type="password" name="password" id="password" required />
                             <br /><br />
                         </form>
                     </div>
@@ -33,7 +54,7 @@ function SignIn() {
                         Sign In
                     </div>
                     <div className="sign-in-option">
-                        Already have an account? <span onClick={() => navigate('/sign_up')}>Sign up</span>
+                        Already have an account? <span id="sign-up" onClick={moveDiv}>Sign up</span>
                     </div>
                 </div>
             </div>
@@ -41,4 +62,4 @@ function SignIn() {
     );
 }
 
-export default SignIn
+export default SignIn;
