@@ -1,0 +1,150 @@
+.diary{
+    background: linear-gradient(#FF512F 0%, #DD2476 100%);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+.diary-left{
+    width: 20%;
+    color: white;
+}
+.diary-left h1{
+    font-family: Spectral, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+
+.diary-right{
+    background-color: white;
+    width: 80%;
+    margin: 20px;
+    border-radius: 10px;
+}
+.diary-navbar{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    width: fit-content;
+    font-family: Spectral, sans-serif;
+}
+.title h1, .title h3{
+    margin: 0;
+}
+.create{
+    font-family: Rubik, serif;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    margin: auto 0;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #DBD9DA;
+    transition: all 0.6s ease;
+}
+.create:hover{
+    background-color: pink;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.create img{
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 25px;
+}
+
+
+
+.container{
+    height: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Rubik, serif;
+    font-size: 1.2rem;
+}
+.diaries{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    height: fit-content;
+    width: 45%;
+    transition: all 0.6s ease;
+}
+.diaries img{
+    width: 200px;
+    margin-right: 5px;
+}
+.diaries:hover{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background-color: floralwhite;
+    cursor: pointer;
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    background: white;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: Rubik, serif;
+    font-size: 1.2rem;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+.modal-content input, .modal-content textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.modal-buttons button {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.modal-buttons button:first-child {
+    background: #ccc;
+    color: black;
+}
+.modal-buttons button:last-child {
+    background: #19D019;
+    color: white;
+}
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,61 @@
+.journey, .vision{
+    width: 80%;
+    margin: 200px auto;
+    text-align: center;
+}
+.journey h1, .vision h1, .mission h1, .different h1{
+    font-family: Spectral, sans-serif;
+    font-size: 3rem;
+    color: #102660;
+}
+.journey p, .vision p, .mission-1 p, .mission-2 p, .different p{
+    font-family: Rubik, serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+
+.mission{
+    margin: 200px 0;
+    text-align: center;
+}
+.mission-1{
+    border: 2px solid black;
+    width: 80%;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.mission-2{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.mission-2 div{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 48%;
+    margin: 35px 0;
+}
+.mission-1 h2, .mission-2 h2, .different h2{
+    font-family: Spectral, sans-serif;
+    font-size: 2.1rem;
+    color: crimson;
+}
+
+
+
+.different{
+    margin: 200px 0;
+    text-align: center;
+}
+.different-4{
+    display: flex;
+    justify-content: space-evenly;
+}
+.different-4 div{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 22%;
+}
